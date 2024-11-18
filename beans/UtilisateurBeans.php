@@ -19,7 +19,7 @@ class Utilisateur
         $this->hydrate($data);
     }
 
-    // Méthode d'hydratation
+
     private function hydrate(array $data) {
         foreach ($data as $key => $value) {
             $method = 'set' . ucfirst($key);
